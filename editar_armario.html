@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Editar/Armário</title>
+		<link rel="stylesheet" type="text/css" href="menuStyle.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="validacoes.js"> </script>
+	</head>
+	<body>
+		<div id="fora">
+			<div id="superior">
+				<div>
+					<a href="inicio.html">
+						<img id="logo" src="./logo.png">
+					</a>
+				</div>
+				<div id="usuario">
+					Olá (nome do usuário)<br>
+					Seu eixo é (nome do eixo)<br>
+					<input type="button" value="Sair">
+				</div>
+			</div>
+			
+			<ul id="menu">
+				<li>Sistema
+					<ul>
+						<a href="editar_perfil.html"><li>Editar Perfil</li></a>
+					</ul>
+				</li>
+				<li>Cadastro
+					<ul>
+						<a href="cadastro_aluno1.html"><li>Aluno</li></a>
+						<li>Armário
+							<ul>
+								<a href="cadastrar_armario.html"><li>Novo Armário</li></a>
+								<a href="editar_armario.html"><li>Editar Armário</li></a>
+								<a href="excluir_armario.html"><li>Excluir Armário</li></a>
+							</ul>
+						</li>
+						<li>Usuário
+							<ul>
+								<a href="cadastrar_usuario.html"><li>Novo Usuário</li></a>
+								<a href="editar_usuario.html"><li>Editar Usuário</li></a>
+								<a href="excluir_usuario.html"><li>Excluir Usuário</li></a>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>Devolução
+					<ul>
+						<a href="devolucao.html"><li>Devolver Chave</li></a>
+					</ul>
+				</li>
+				<li>Perda
+					<ul>
+						<a href="perda.html"><li>Chave Reserva</li></a>
+					</ul>
+				</li>
+				<li>Consultas
+					<ul>
+						<a href="consulta_aluno1.html"><li>Aluno</li></a>
+						<a href="consulta_armario1.html"><li>Armário</li></a>
+					</ul>
+				</li>
+			</ul>
+			
+			<div id="corpo">
+				<div class="local">
+					Editar/Armário
+				</div>
+				
+				<div id="busca">
+					<form name="busca">
+						Entre com as informações do armário a ser editado:
+						<table id="tabelaBusca" border="0">
+								<tr>
+									<td>Eixo: </td><td><input size="30" type="text" name="eixo" placeholder="Eixo"></td>
+									<td>Número do Armário: </td><td><input size="10" type="text" name="numeroArmario" placeholder="Número"></td>
+									<td><input type="button" value="Buscar" onclick="valida_busca_armario()"></td>
+								</tr>
+								<tr>
+									<td></td><td><span id=spanBusca1></span></td>
+									<td></td><td><span id=spanBusca2></span></td>
+								</tr>
+						</table>
+					</form>
+				</div>
+				
+				<div id="cadastro">
+					<form name="formulario">
+						<p>Dados do Armário:
+						<table id="tabelaCadastro" border="0">
+							<tr>
+								<td>Eixo: </td><td><input size="30" type="text" name="eixo" placeholder="Eixo"></td>
+								<td>Tombo: </td><td><input size="30" type="text" name="tombo" placeholder="Tombo"></td>
+							</tr>
+							<tr>
+								<td></td><td><span id=span1></span></td>
+								<td></td><td><span id=span2></span></td>
+							</tr>
+							<tr>
+								<td>Número: </td><td><input size="10" type="text" name="numeroArmario" placeholder="Número"></td>
+								<td>Cor: </td><td><input size="15" type="text" name="cor" placeholder="Cor"></td>
+							</tr>
+							<tr>
+								<td></td><td><span id=span3></span></td>
+								<td></td><td><span id=span4></span></td>
+							</tr>
+						</table>
+						<br>
+						<p>Numeração das Portas:
+						<div id="divTabelaPortas">
+							<table id="tabelaPortas" border="0">
+								<tr>
+									<td></td><td>A</td><td>B</td><td>C</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td><input size="2" type="text" id="a1" name="porta" placeholder="A1"></td>
+									<td><input size="2" type="text" id="b1" name="porta" placeholder="B1"></td>
+									<td><input size="2" type="text" id="c1" name="porta" placeholder="C1"></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td><input size="2" type="text" id="a2" name="porta" placeholder="A2"></td>
+									<td><input size="2" type="text" id="b2" name="porta" placeholder="B2"></td>
+									<td><input size="2" type="text" id="c2" name="porta" placeholder="C2"></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td><input size="2" type="text" id="a3" name="porta" placeholder="A3"></td>
+									<td><input size="2" type="text" id="b3" name="porta" placeholder="B3"></td>
+									<td><input size="2" type="text" id="c3" name="porta" placeholder="C3"></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td><input size="2" type="text" id="a4" name="porta" placeholder="A4"></td>
+									<td><input size="2" type="text" id="b4" name="porta" placeholder="B4"></td>
+									<td><input size="2" type="text" id="c4" name="porta" placeholder="C4"></td>
+								</tr>
+							</table>
+						</div>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<span id=span5></span>
+						<p>*Obs: O número da porta do armário corresponde ao número da chave.
+
+						<div id="salvar">
+							<input type="button" value="Salvar" onclick="valida_cadastro_armario()">
+						</div>
+					</form>
+				</div>
+			</div>
+				
+			<div id="rodape">
+				Gerência Key - @Copyleft 2013 | Desenvolvido por SWTI
+			</div>
+		</div>
+	<body>
+</html>

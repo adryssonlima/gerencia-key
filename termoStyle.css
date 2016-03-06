@@ -1,0 +1,69 @@
+#termo {
+	/*border: 1px solid black;*/
+}
+#logo_ifce {
+	/*border: 1px solid black;*/
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;
+	width: 240px;
+	height: 100px;
+}
+#cabecalho {
+	/*border: 1px solid black;*/
+	text-align: center;
+	font-weight: bold;
+}
+#texto {
+	/*border: 1px solid black;*/
+	text-align: justify;
+	padding-left: 75px;
+	padding-right: 75px;
+}
+#texto > p {
+	text-indent: 40px;
+}
+#tabela {
+	border: 1px solid black;
+	overflow: auto;
+	width: 604px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#recebimento {
+	border: 1px solid black;
+	float: left;
+	width: 200px;
+	height: 80px;
+	padding-top: 10px;
+}
+#devolucao {
+	border: 1px solid black;
+	float: left;
+	width: 200px;
+	height: 80px;
+	padding-top: 10px;
+}
+#assinaturaAluno {
+	border: 1px solid black;
+	float: left;
+	width: 400px;
+	height: 80px;
+	text-align: center;
+	padding-top: 10px;
+}
+#assinaturaCoordenador {
+	border: 1px solid black;
+	float: left;
+	width: 400px;
+	height: 80px;
+	text-align: center;
+	padding-top: 10px;
+}
+#data {
+	text-align: right;
+}
+#assinatura {
+	text-align: center;
+}
+

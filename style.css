@@ -1,0 +1,226 @@
+/*Este arquivo CSS contém o estilo de todas as telas do Gerência Key*/
+
+/*01 - Tela de Login*/
+body {
+	background-image: url("\logo6.png");
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	
+}
+h2 {
+	font-family: Comic Sans MS;
+}
+table {
+	margin: auto;
+}
+#login {
+	width: 200px;
+	height: 170px;
+}
+
+/*02 - Tela Inicial*/
+#fora {
+	padding: 10px;
+	padding-right: 200px;
+	padding-left: 200px;
+}
+#superior {
+	overflow: auto;
+}
+
+#logo {
+	float: left;
+	width: 150px;
+	height: 130px;
+}
+#usuario {
+	float: right;
+	width: 200px;
+	text-align: right;
+	font-weight: bold;
+}
+#corpo {
+	border: 1px solid black;
+	min-height: 350px;
+	background-color: white;
+	overflow: auto;
+	margin-top: 10px;
+	margin-bottom: 70px;
+	padding: 10px;
+	clear: left;
+	border-radius:10px;
+	box-shadow: #888888 10px 10px 5px;
+}
+
+#rodape {
+	background-color: #888888;
+	border-radius:6px;
+	padding: 5px;
+}
+
+/*1.2 Esqueci minha Senha*/
+#campo {
+	text-align: left;
+	overflow: left;
+}
+#email:hover {
+	color: blue;
+}
+
+/*03 - Editar Perfil*/
+#editarPerfil {
+	float: left;
+	text-align: left;
+}
+div.local {
+	font-size: 22px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+span {
+	color: red;
+}
+
+/*4.1 - Cadastro/Aluno*/
+#buscaAluno {
+	text-align: left;
+	margin-bottom: 10px;
+}
+#javaScript {
+	border: 1px solid black;
+	text-align: left;
+	margin-bottom: 10px;
+}
+#cadastrar {
+	text-align: left;
+}
+
+/*4.2 - Cadastro/Aluno*/
+#legenda {
+	padding: 10px;
+	float: left;
+	width: 98%;
+	text-align: left;
+}
+#legenda > div{
+	display: inline-block;
+	margin-right: 10px;
+	float: left;
+}
+#legenda .block{
+	float: left;
+	margin-right: 10px;
+	width: 30px;
+	height: 15px;
+	border: 1px solid black;
+}
+#legenda .red{
+	background-color: red;
+}
+#legenda input[type=submit] {
+	float: right;
+}
+#botao {
+	float: right;
+}
+
+/*4.3 - Cadastro/Aluno*/
+#botoes {
+	overflow: auto;
+}
+#anterior {
+	float: left;
+}
+#proximo {
+	float: right;
+}
+
+/*4.4 - Cadastro/Aluno*/
+#javaScript {
+	padding: 5px;
+	text-align: left;
+}
+#concluir {
+	float: left;
+	padding-left: 20px;
+}
+
+/*4.5 - Cadastro/Aluno*/
+#imprimir {
+	float: center;
+}
+#termo {
+	padding: 5px;
+	text-align: left;
+	border: 1px solid black;
+}
+
+/*4.6 - Cadastro/Aluno*/
+#detalhes {
+	float: left;
+}
+
+/*5.2 - CadastrarNovoArmario*/
+#cadastro {
+	float: left;
+	text-align: left;
+}
+#cadastro > #tabelaCadastro {
+	text-align: left;
+	float: left;
+}
+#cadastro > #tabelaPortas {
+	text-align: center;
+	float: left;
+}
+#cadastro > p {
+	clear: left;
+	text-align: left;
+}
+#cadastrar {
+	clear: left;
+	float: left;
+}
+#divTabelaPortas {
+	float: left;
+}
+
+/*5.3 - EditarArmario*/
+#busca {
+	float: left;
+	text-align: left;
+	margin-bottom: 30px;
+}
+#salvar {
+	clear: left;
+	float: left;
+}
+
+/*5.4- ExcluirArmario*/
+#excluir {
+	clear: left;
+	float: left;
+}
+
+/*7.1 - Devolucao*/
+#devolver {
+	float: left;
+}
+
+/*8.1 - Perda*/
+#gerarTermo {
+	text-align: left;
+}
+#chaveReserva {
+	text-align: left;
+}
+
+/*10.1 - ConsultaArmario*/
+#verArmario {
+	float: left;
+}
+#buscaArmario {
+	text-align: left;
+	margin-bottom: 10px;
+}
